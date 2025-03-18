@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class PlayerInputManager : MonoBehaviour
@@ -13,6 +15,11 @@ public class PlayerInputManager : MonoBehaviour
 
     public static PlayerInputManager instance;
     [SerializeField] Vector2 movementInput;
+    public float verticalInput;
+    public float horizontalInput;
+    [SerializeField] public float moveAmount;
+
+
     PlayerControls playerControls;
 
 
@@ -36,19 +43,21 @@ public class PlayerInputManager : MonoBehaviour
         // when the scene changes, this logic is run once
         SceneManager.activeSceneChanged += OnSceneChange;
 
+
         instance.enabled = false;
 
     }
 
+
     private void OnSceneChange(Scene arg0/*old scene*/ , Scene arg1/*new scene*/)
     {
         // if we are loading into our world scene, enable our player inputs
-        if (arg0.buildIndex == WorldSaveGameManager.singletonInstance.GetWorldSceneIndex())
+        if (arg1.buildIndex == WorldSaveGameManager.singletonInstance.GetWorldSceneIndex())
         {
             instance.enabled = true;
         }
         // otherwise we must be at the main menu, disable our players controls
-        // this is so our player cant move around if we enter thingd like a charater creation menu or other things
+        // this is so our player cant move around if we enter thing like a charater creation menu or other things
         else
         {
             instance.enabled = false;
@@ -74,5 +83,42 @@ public class PlayerInputManager : MonoBehaviour
         SceneManager.activeSceneChanged -= OnSceneChange;
     }
 
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        //Good for testing
+        if (enabled)
+        {
+            if (hasFocus)
+            {
+                playerControls.Enable();
+            }
+            else
+            {
+                playerControls.Disable();
+            }
+        }
+    }
+    private void Update()
+    {
+        HandleMovementInput();
+    }
+
+    private void HandleMovementInput()
+    {
+        verticalInput = movementInput.y;
+        horizontalInput = movementInput.x;
+
+        moveAmount = Mathf.Clamp01(Mathf.Abs(verticalInput) + Mathf.Abs(horizontalInput));
+
+        // we clamp the values, so they ar 0,0.5, 1
+        if (moveAmount <= 0.5 && moveAmount > 0)
+        {
+            moveAmount = 0.5f;
+        }
+        else if (moveAmount > 0.5 && moveAmount <= 1)
+        {
+            moveAmount = 1;
+        }
+    }
 
 }
