@@ -1,4 +1,4 @@
-SWORDS OF THE ANCESTORS - Capstone Project
+SWORDS OF THE ANCESTORS - Applied Capstone Project
 =========================================
 
 Game Summary:
