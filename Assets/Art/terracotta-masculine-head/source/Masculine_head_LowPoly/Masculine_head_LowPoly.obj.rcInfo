@@ -1,0 +1,30 @@
+<Model globalCoordinateSystem="+proj=utm +zone=40 +datum=WGS84 +units=m +no_defs"
+   globalCoordinateSystemName="epsg:32640 - WGS 84 / UTM zone 40N" exportCoordinateSystemType="0">
+  <globalCoordinateSystemWkt>PROJCS["WGS_1984_UTM_Zone_40N",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",57.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]</globalCoordinateSystemWkt>
+  <transformToModel>93.3550285564563 -0.000196303142646554 0.306486176443471 -0.0462639282896534 0 93.3555125061732 0.0597938239857996 -0.00938811986309769 -0.306486239309148 -0.0597935017532907 93.3550094077116 -0.153769583059048 0 0 -0 1</transformToModel>
+  <Header magic="5786959" version="1"/>
+</Model>
+<ModelExport exportBinary="1" exportInfoFile="1" exportVertices="1" exportVertexColors="2"
+   exportVertexNormals="1" exportTriangles="1" exportTriangleStrips="0"
+   meshColor="4294967295" tileType="0" exportTextureAlpha="0" exportToOneTexture="0"
+   embedTextures="0" shrinkTextures="0" oneTextureMaxSide="8192" oneTextureUsePow2TexSide="1"
+   exportCoordinateSystemType="0" settingsAnchor="0 0 0" settingsRotation="0 0 0"
+   settingsScalex="1" settingsScaley="1" settingsScalez="1" normalSpace="2"
+   normalRange="0" normalFlip="0 0 0" formatAndVersionUID="obj 000 "
+   exportModelByParts="0" exportRandomPartColor="0" exportCameras="0"
+   exportCamerasAsModelPart="0" exportMaterials="0" numberAsciiFormatting="5"
+   authorComment="" exportedLayerCount="2">
+  <Header magic="5786949" version="5"/>
+  <Layer0 type="1" textureLayerIndex="0" textureWicContainerFormat="{19E4A5AA-5662-4FC5-A0C0-1758028E1057}"
+     textureWicPixelFormat="{6FDDC324-4E03-4BFE-B185-3D77768DC90C}" textureExtension="jpeg"/>
+  <Layer1 type="2" textureLayerIndex="0" textureWicContainerFormat="{19E4A5AA-5662-4FC5-A0C0-1758028E1057}"
+     textureWicPixelFormat="{6FDDC324-4E03-4BFE-B185-3D77768DC90C}" textureExtension="jpeg"/>
+</ModelExport>
+<CalibrationExportSettings undistortImagesWicFormat="{1B7CFAF4-713F-473C-BBCD-6137425FAEAF}"
+   undistortImagesWicPixlFormat="{6FDDC324-4E03-4BFE-B185-3D77768DC90F}"
+   undistortDownscaleFactor="0" undistortNamingConvention="0" undistFitMode="0"
+   undistResMode="0" undistPrincipalMode="0" undistCutOut="0" undistMaxPixels="0"
+   undistBackColor="0" undistortCustomWidth="0" undistortCustomHeight="0"
+   undistortCalibration="0" undistortImagesExtension="png" undistortImageNameSuffix=""
+   undistortImageLayerType="0" exportUndistorted="0" exportImages="0"
+   exportDisabled="0"/>

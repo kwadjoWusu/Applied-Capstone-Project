@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -11,15 +12,15 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Post Processing
+  - Enemy
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Damage Collider
+  - Damage Collider Weapon
   - 
   - 
   - 

@@ -44,7 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66b2788bc2824a9a87bbd9bd9454a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2446746671502317656, guid: 9a0d7eb0170d1453581436919452f78b, type: 3}
   movementInput: {x: 0, y: 0}
   verticalInput: 0
   horizontalInput: 0
   moveAmount: 0
+  cameraInput: {x: 0, y: 0}
+  cameraVerticalInput: 0
+  cameraHorizontalInput: 0
