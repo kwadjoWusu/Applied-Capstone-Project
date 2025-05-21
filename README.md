@@ -19,14 +19,6 @@ Feedback animations and effects when the player is hit.
 
 ![Take Damage](Media/take-damage.gif)
 
-### 💀 Death Sequence
-Death animations when health goes to 0.
-
-![Death](Media/death.gif)
-
-### 🎮 Snippet of Gameplay
-
-![Gameplay](Media/gameplay.gif)
 
 
 
