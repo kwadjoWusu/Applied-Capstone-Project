@@ -12,12 +12,12 @@ A quick look at some gameplay features in *Swords of the Ancestors*.
 
 ### ⚔️ Combat Snippet
 
-![Combat](Media/combat.gif)
+![Combat](Assets/Media/combat.gif)
 
 ### 💥 Taking Damage
 Feedback animations and effects when the player is hit.
 
-![Take Damage](Media/take-damage.gif)
+![Take Damage](Assets/Media/take-damage.gif)
 
 
 
