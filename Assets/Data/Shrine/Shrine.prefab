@@ -161,7 +161,7 @@ MonoBehaviour:
   questData: {fileID: 11400000, guid: 096dcd79cd32444149b82d1400ae35da, type: 2}
   interactKey: 105
   interactRadius: 3
-  restoreEffect: {fileID: 0}
+  restoreEffect: {fileID: 7627073210572581364, guid: cb15f9d46f592422eb641e7bc7cb8ce0, type: 3}
   shrineAnimator: {fileID: 0}
   fadeInOutDuration: 0.5
   OnShrineRestored:

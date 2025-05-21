@@ -15,7 +15,7 @@ MonoBehaviour:
   questId: 2
   lockedMessage: Locked
   missingArtifactMessage: You need a cultural artifact to restore this shrine
-  readyMessage: Press [E] to restore shrine
+  readyMessage: Press [I] to restore shrine
   restoredMessage: Restored Shrine!
   requiredArtifactId: 2
   artifactDescription: 
